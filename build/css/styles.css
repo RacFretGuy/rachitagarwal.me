@@ -1,4 +1,10 @@
 
+body{
+    margin: 0;
+    padding: 0;
+
+}
+
 .top-container{
     background-color: #222831;
     margin: 0px;
@@ -104,7 +110,7 @@ text-decoration: underline;
     line-height: 2;
 }
 .intro_para{
-    width: 500px;
+    width: 70%;
     margin: 0 auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 2;
@@ -197,7 +203,7 @@ body::-webkit-scrollbar-thumb{
     .skill-row{
         width: 90%;
     }
-
+    .intro_para
 
   }
 @media(max-width:30rem){
