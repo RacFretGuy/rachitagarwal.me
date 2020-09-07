@@ -223,10 +223,10 @@ body::-webkit-scrollbar-thumb{
         width: 100%;
     }
     h1{
-        font-size: 20px;
+        font-size: 3rem;
         position: relative;
         left: 4rem;
-        color: red;
+        
     }
     .prog{
         font-size: 2rem;
