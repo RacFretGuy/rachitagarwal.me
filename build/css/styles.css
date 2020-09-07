@@ -1,8 +1,10 @@
+
 .top-container{
     background-color: #222831;
-  margin: 0px;
-  position: relative;
-  padding-top: 100px;
+    margin: 0px;
+    position: relative;
+    padding-top: 100px;
+    width: 100%;
 }
 h1{
     
@@ -40,12 +42,29 @@ text-decoration: underline;
     position: absolute;
     left: 300px;
     bottom: 300px;
+    z-index: 0;
+    animation: cloudmove infinite ease-in-out 12s ;
+    transform-origin: center;
+    transform-box: fill-box;
 }
 .first-cloud{
     position:absolute;
     right: 300px;
     top: 50px;
-    
+    z-index: 0;
+    animation: cloudmove infinite ease-in-out 10s ;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+@keyframes cloudmove{
+    from{
+        transform: translateX(0rem);
+        opacity: 1;
+    }
+    to{
+        transform: translate(-10rem);
+        opacity: 0;
+    }
 }
 .rachit{
     height: 180px;
@@ -80,9 +99,9 @@ text-decoration: underline;
 }
 .skill-row{
     width: 50%;
-   margin: 100px auto 100px auto;
-   text-align: left;
-   line-height: 2;
+    margin: 100px auto 100px auto;
+    text-align: left;
+    line-height: 2;
 }
 .intro_para{
     width: 500px;
@@ -106,9 +125,11 @@ margin-bottom: 80px;
 .bottom-container{
     background-color: #dbdbdb;
    padding-top: 30px;  
+   width: 100%;
 }
 .middle-container{
     background-color: #393e46;
+    width: 100%;
 }
 .footer-link{
     padding: 30px 40px 10px;
@@ -146,3 +167,48 @@ body::-webkit-scrollbar-track{
 body::-webkit-scrollbar-thumb{
     background:#11999E;
 }
+
+/* Responsive media queries */
+@media(max-width:48rem){
+    .top-container{
+        background-color: black;
+        width: 100%;
+    }
+    h1{
+        font-size: 4rem;
+    }
+    .prog{
+        font-size: 2rem;
+    }
+    .mountain{
+        width:25.5rem;
+    }
+    .first-cloud{
+        position: absolute;
+        top:2.5rem;
+    }
+    .second-cloud{
+        position: absolute;
+        bottom: 13rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    .skill-row{
+        width: 90%;
+    }
+
+
+  }
+@media(max-width:30rem){
+    .top-container{
+        width: 100%;
+    }
+    h1{
+        font-size: 3rem;
+    }
+}  
+
+  
+  
+  
