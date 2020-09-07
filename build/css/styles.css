@@ -10,6 +10,7 @@ body{
     margin: 0px;
     position: relative;
     padding-top: 100px;
+    z-index: -1;
     width: 100%;
 }
 h1{
@@ -19,7 +20,7 @@ h1{
     font-family: 'Press Start 2P', cursive;
     font-size: 5.625rem;
     position: relative;
-    right: 100px;
+    right: 8rem;
     color: #66BFBF;
     
 }
@@ -46,8 +47,8 @@ text-decoration: underline;
 }
 .second-cloud{
     position: absolute;
-    left: 300px;
-    bottom: 300px;
+    right: 4rem;
+    bottom: 13rem;
     z-index: 0;
     animation: cloudmove infinite ease-in-out 12s ;
     transform-origin: center;
@@ -104,7 +105,7 @@ text-decoration: underline;
     font-weight: normal;
 }
 .skill-row{
-    width: 50%;
+    width: 60%;
     margin: 100px auto 100px auto;
     text-align: left;
     line-height: 2;
@@ -134,7 +135,7 @@ margin-bottom: 80px;
    width: 100%;
 }
 .middle-container{
-    background-color: #393e46;
+    background-color: #222427;
     width: 100%;
 }
 .footer-link{
@@ -149,6 +150,13 @@ margin-bottom: 80px;
 }
 .contact{
     padding-bottom: 80px;
+    width: 70%;
+    align-content: center;
+    position: relative;
+    left: 15%;
+}
+.contact-me{
+    text-align: center;
 }
 .footer-link:hover{
     position: relative;
@@ -182,6 +190,8 @@ body::-webkit-scrollbar-thumb{
     }
     h1{
         font-size: 4rem;
+        position: relative;
+        right: 8rem;
     }
     .prog{
         font-size: 2rem;
@@ -196,6 +206,7 @@ body::-webkit-scrollbar-thumb{
     .second-cloud{
         position: absolute;
         bottom: 13rem;
+        right: 4rem;
     }
     h2{
         font-size: 2rem;
@@ -203,16 +214,43 @@ body::-webkit-scrollbar-thumb{
     .skill-row{
         width: 90%;
     }
-    .intro_para
+    
 
   }
-@media(max-width:30rem){
+@media(min-width:300px) and (max-width:400px){
     .top-container{
+        background-color: black;
         width: 100%;
     }
     h1{
-        font-size: 3rem;
+        font-size: 20px;
+        position: relative;
+        left: 4rem;
+        color: red;
     }
+    .prog{
+        font-size: 2rem;
+    }
+    .mountain{
+        width:10rem;
+    }
+    .first-cloud{
+        position: absolute;
+        top:2.5rem;
+    }
+    .second-cloud{
+        position: absolute;
+        bottom: 13rem;
+        left: 10rem;
+        width:rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    .skill-row{
+        width: 90%;
+    }
+    
 }  
 
   
