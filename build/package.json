@@ -1,0 +1,23 @@
+{
+  "name": "rachitagarwal.me",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "firebase-tools": "^8.10.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RacFretGuy/rachitagarwal.me.git"
+  },
+  "author": "rachit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RacFretGuy/rachitagarwal.me/issues"
+  },
+  "homepage": "https://github.com/RacFretGuy/rachitagarwal.me#readme"
+}
